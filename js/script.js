@@ -22,8 +22,7 @@ allLinks.forEach(function (link) {
         const href = link.getAttribute('href');
         if (href === '#') {
             window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+                top: 0, behavior: 'smooth'
             });
         } else if (href !== '#') {
             document.querySelector(href).scrollIntoView({
@@ -36,3 +35,19 @@ allLinks.forEach(function (link) {
         }
     });
 });
+
+///////////////////////////////////////////////////
+// Sticky navigation
+const sectionHero = document.querySelector('.section-hero');
+const obs = new IntersectionObserver(function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+        document.body.classList.add('sticky');
+    } else {
+        document.body.classList.remove('sticky');
+    }
+}, {
+    // In the viewport
+    root: null, threshold: 0, rootMargin: '-80px'
+});
+obs.observe(sectionHero);
