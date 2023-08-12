@@ -12,13 +12,16 @@
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png"/>
     <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/queries.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet">
+
     <script src="./js/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -76,11 +79,16 @@ then the element width will be 100%  of the container width-->
                     <p class="delivered-text">
                         <span>250,000+</span> meals last year!</p>
                 </div>
-
             </div>
+
             <div class="hero-img-box">
-                <img src="./img/hero.png" class="hero-img"
-                     alt="Woman enjoying foods, meals in storage container, and food bowls on a table">
+                <picture>
+                    <source srcset="img/hero.webp" type="image/webp">
+                    <source srcset="img/hero-min.png" type="image/png">
+
+                    <img src="./img/hero-min.png" class="hero-img"
+                         alt="Woman enjoying foods, meals in storage container, and food bowls on a table">
+                </picture>
             </div>
         </div>
     </section>
@@ -459,7 +467,6 @@ then the element width will be 100%  of the container width-->
         </div>
     </section>
 </main>
-
 <footer class="footer">
     <div class="container grid grid--footer ">
         <div class="logo-col">
