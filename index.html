@@ -439,18 +439,18 @@ then the element width will be 100%  of the container width-->
                         Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can
                         cancel or pause anytime. And the first meal is on us!
                     </p>
-                    <form action="#" class="cta-form">
+                    <form class="cta-form" name="sign-up" netlify>
                         <div>
                             <label for="full-name">Full name</label>
-                            <input id="full-name" type="text" placeholder="John Smith" required/>
+                            <input id="full-name" type="text" placeholder="John Smith" name="full-name" required/>
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="me@gmail.com" required/>
+                            <input id="email" type="email" placeholder="me@gmail.com" name="email" required/>
                         </div>
                         <div>
                             <label for="select-where">Where did you hear from us?</label>
-                            <select id="select-where" required>
+                            <select id="select-where" name="select-where" required>
                                 <option value="none">Please choose one option</option>
                                 <option value="friends">Friends and family</option>
                                 <option value="ad">Facebook Ads</option>
